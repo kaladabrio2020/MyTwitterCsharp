@@ -1,0 +1,16 @@
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\bin\Debug\MyTwitter.exe.config
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\bin\Debug\MyTwitter.exe
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\bin\Debug\MyTwitter.pdb
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\obj\Debug\MyTwitter.csproj.AssemblyReference.cache
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\obj\Debug\MyTwitter.csproj.SuggestedBindingRedirects.cache
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\obj\Debug\MyTwitter.Form1.resources
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\obj\Debug\MyTwitter.Properties.Resources.resources
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\obj\Debug\MyTwitter.csproj.GenerateResource.cache
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\obj\Debug\MyTwitter.csproj.CoreCompileInputs.cache
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\obj\Debug\MyTwitter.exe
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\obj\Debug\MyTwitter.pdb
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\obj\Debug\MyTwitter.JanelaCadastro.Cadastro.resources
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\obj\Debug\MyTwitter.JanelaMyTwitter.MyTwitterC.resources
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\obj\Debug\MyTwitter.JanelaMyTwitter.Tweetar.resources
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\obj\Debug\MyTwitter.JanelaMyTwitter.Amigos.resources
+C:\Users\mateu\source\repos\MyTwitter\MyTwitter\obj\Debug\MyTwitter.JanelaMyTwitter.TimeLine.resources

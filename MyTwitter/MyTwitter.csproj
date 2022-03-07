@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55D243D5-ADE7-4D9E-9C00-D10731E712D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MyTwitter</RootNamespace>
+    <AssemblyName>MyTwitter</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassesMyTwitter\Aquivos\Abrir\PerfilArquivoAbrir.cs" />
+    <Compile Include="ClassesMyTwitter\Aquivos\Abrir\SeguidosArquivoAbrir.cs" />
+    <Compile Include="ClassesMyTwitter\Aquivos\Abrir\TimelineArquivoAbrir.cs" />
+    <Compile Include="ClassesMyTwitter\Aquivos\Salvar\PerfilArquivoGravar.cs" />
+    <Compile Include="ClassesMyTwitter\Aquivos\Salvar\SeguidosArquivoGravar.cs" />
+    <Compile Include="ClassesMyTwitter\Aquivos\Salvar\TimelineArquivoGravar.cs" />
+    <Compile Include="ClassesMyTwitter\Perfis\Perfil.cs" />
+    <Compile Include="ClassesMyTwitter\Perfis\PessoaFisica.cs" />
+    <Compile Include="ClassesMyTwitter\Perfis\PessoaJuridica.cs" />
+    <Compile Include="ClassesMyTwitter\Perfis\Tweet.cs" />
+    <Compile Include="ClassesMyTwitter\Twitter\Interface\Mytwitter.cs" />
+    <Compile Include="ClassesMyTwitter\Twitter\Interface\Repositorio.cs" />
+    <Compile Include="ClassesMyTwitter\Twitter\RepositorioUsuario.cs" />
+    <Compile Include="ClassesMyTwitter\Twitter\CTwitter.cs" />
+    <Compile Include="JanelaMyTwitter\Amigos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JanelaMyTwitter\Amigos.Designer.cs">
+      <DependentUpon>Amigos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JanelaMyTwitter\TimeLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JanelaMyTwitter\TimeLine.Designer.cs">
+      <DependentUpon>TimeLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalvandoNome.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JanelaCadastro\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JanelaCadastro\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JanelaMyTwitter\MyTwitterC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JanelaMyTwitter\MyTwitterC.Designer.cs">
+      <DependentUpon>MyTwitterC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JanelaMyTwitter\Tweetar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JanelaMyTwitter\Tweetar.Designer.cs">
+      <DependentUpon>Tweetar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JanelaCadastro\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JanelaMyTwitter\Amigos.resx">
+      <DependentUpon>Amigos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JanelaMyTwitter\MyTwitterC.resx">
+      <DependentUpon>MyTwitterC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JanelaMyTwitter\TimeLine.resx">
+      <DependentUpon>TimeLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JanelaMyTwitter\Tweetar.resx">
+      <DependentUpon>Tweetar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArquivosTxt\Name.txt" />
+    <Content Include="ArquivosTxt\Seguidos.txt" />
+    <Content Include="ArquivosTxt\Timeline.txt" />
+    <Content Include="ArquivosTxt\Usuario.txt" />
+    <None Include="Resources\twitter-bird-logo-white-on-blue1.png" />
+    <None Include="Resources\twitter-bird-logo-white-on-blue.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
